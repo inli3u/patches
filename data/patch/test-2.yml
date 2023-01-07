@@ -1,0 +1,37 @@
+name: Test 2
+device: Microbrute
+notes: This is a test patch
+tags: bass
+
+params:
+  osc.sub: 9
+  osc.ultrasaw: 9
+  osc.pulsewidth: 9
+  osc.metalizer: 9
+  osc.overtone: 9
+  osc.saw: 9
+  osc.square: 9
+  osc.triangle: 9
+  filter.cutoff: 9
+  filter.res: 9
+  filter.brute: 9
+  filter.env: 9
+  filter.mode: 'LP'
+  filter.kbd: 9
+  controls.glide: 9
+  controls.mod: cutoff
+  lfo.amount: 9
+  lfo.rate: 9
+  lfo.wave: square
+  lfo.sync: free
+  env.amount: 9
+  env.vca: env
+  env.attack: 9
+  env.decay: 9
+  env.sustain: 9
+  env.release: 9
+  patch.envOut: patch.metalIn
+
+perform:
+  - osc.overtone: [0, 1]
+  

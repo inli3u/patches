@@ -1,0 +1,37 @@
+name: Tone Sweep
+device: Microbrute
+notes: Use the overtone knob to sweep from high saws to low buzzy tones. Personally used plucky sound driven by sequencer and playing with seq rate.
+tags: bass lead dark bright
+
+params:
+  osc.sub: 9
+  osc.ultrasaw: 0
+  osc.pulsewidth: 0
+  osc.metalizer: 0
+  osc.overtone: 2
+  osc.saw: 2
+  osc.square: 2
+  osc.triangle: 2
+  filter.cutoff: 9
+  filter.res: 10
+  filter.brute: 10
+  filter.env: 15
+  filter.mode: 'LP'
+  filter.kbd: 8
+  controls.glide: 0
+  controls.mod: cutoff
+  lfo.amount: 0
+  lfo.rate: 0
+  lfo.wave: square
+  lfo.sync: free
+  env.amount: 10
+  env.vca: env
+  env.attack: 0
+  env.decay: 10
+  env.sustain: 15
+  env.release: 20
+  patch.envOut: patch.metalIn
+
+perform:
+  - osc.overtone: [0, 1]
+  
